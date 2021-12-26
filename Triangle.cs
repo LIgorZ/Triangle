@@ -82,5 +82,17 @@ namespace Triangle
             }
         }
 
+
+        // констант true и false: обращение к экземпляру класса дает значение true, если треугольник с заданными длинами сторон существует, иначе false;
+        public static bool operator false(Triangle obj)
+        {
+            return obj.isTriangle;
+        }
+
+        public static bool operator true(Triangle obj)
+        {
+            return obj.isTriangle;
+        }
+
     }
 }
